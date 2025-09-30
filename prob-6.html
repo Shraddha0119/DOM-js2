@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+    <button onclick="infun()">increase</button>
+    <button onclick="decfun()">decrease</button>
+</body>
+<script>
+    let head=document.getElementById("head");
+
+    let count=0;
+    head.innerText=count;
+
+
+    function infun(){
+        count++;
+        console.log(count)
+        head.innerText=count;
+        
+    }
+
+
+    function decfun(){
+        count--;
+        console.log(count);
+        head.innerText=count;
+    }
+</script>
+</html>
