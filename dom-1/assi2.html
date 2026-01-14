@@ -3,17 +3,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>showing alerts</title>
+    <style>
+        #main{
+            height:250;
+            width: 250;
+            border: 2px solid ;
+            margin: auto;
+            padding-left:100px;
+            padding-top:100px;
+        }
+        .www{
+            width: 150;
+        }
+    </style>
 </head>
+
 <body>
 
 
+<div id="main">
+    <button class="www" onclick="showfirstName()">first name</button><br><br>
+    <button class="www" onclick="showlastName()">last name</button><br><br>
+    <button class="www" onclick="showfullName()">full name</button><br><br>
 
-    <button onclick="showfirstName()">first name</button><br>
-    <button onclick="showlastName()">last name</button><br>
-    <button onclick="showfullName()">full name</button><br>
+</div>
     <script type="text/javascript">
   
         function showfirstName(){
+            
            
             alert("punam")
         }

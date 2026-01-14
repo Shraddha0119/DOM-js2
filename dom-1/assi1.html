@@ -4,14 +4,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom-1</title>
 </head>
+<style>
+   #main{
+    height:300px;
+    width: 300px;
+      border-color: #4d4e50;
+    box-shadow: 0 0 5px rgba(1078, 126, 234, 0.6);
+    margin: auto;
+    padding-left:100;
+    padding-top: 100;
+    
+   }
+   .www{
+    background-color: green;
+   }
+
+   #first{
+    border-color: goldenrod;
+    text-align: center;
+   }
+   #second{
+    border-color: goldenrod;
+    text-align: center;
+   }
+</style>
 <body>
-    <input id="first" type="number" placeholder="enter the 1st number"><br>
+    <div id="main">
+    <input id="first"  type="number" placeholder="enter the 1st number"><br><br>
     <input id="second" type="number" placeholder="enter the 2nd number"><br>
+
+
+    
     <br><br>
-    <button onclick="add()">add</button>
-    <button onclick="sub()">sub</button>
-    <button onclick="mul()">multipy</button>
-    <button onclick="div()">divide</button>
+    <button class="www" onclick="add()">add</button>
+    <button class="www" onclick="sub()">sub</button>
+    <button class="www" onclick="mul()">multipy</button>
+    <button class="www" onclick="div()">divide</button>
+    </div>
 </body>
 <script>
     let first =document.getElementById("first")
